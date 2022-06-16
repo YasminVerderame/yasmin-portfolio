@@ -236,6 +236,13 @@ header{
       left: 16rem;
       top: 20rem;
     }
+    h4{
+      font-size: 16px;
+      color: #fff;
+      position: absolute;
+      left: 37rem;
+      top: 43rem;
+    }
     .info-contact{
       font-size: 32px;
       position: absolute;
@@ -246,6 +253,29 @@ header{
         h3{
           margin-right: 10rem;
           color: #fff;
+          font-size: 22px;
+          margin-top: 1rem;
+        }
+        .linkedin{
+          width: 4rem;
+          height: 4rem;
+          position: absolute;
+          top: -4rem;
+          left: 1rem;
+        }
+        .email{
+          width: 4rem;
+          height: 4rem;
+          position: absolute;
+          top: -4rem;
+          left: 17rem;
+        }
+        .github{
+          width: 4rem;
+          height: 4rem;
+          position: absolute;
+          top: -4rem;
+          left: 32rem;
         }
       }
     }
