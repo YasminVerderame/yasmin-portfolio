@@ -1,1 +1,254 @@
-/* You can add global styles to this file, and also import other style files */
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80% }
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 9000;
+  background-color: #fff;
+  nav{
+    height: 80px;
+    font-family: 'Maison Neue';
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 5px 4px  rgb(207 207 207 / 40%);
+    .nav-link{
+      color: #999999;
+      font-size: 15px;
+      padding: 0px 10px;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+    .nav-link:hover{
+      color: #2fd1fb;
+    }
+    .navbar-nav{
+      margin-left: auto;
+    }
+    
+  }
+}
+
+.main-page{
+  font-family: 'Maison Neue';
+  .topo{
+    display: flex;
+    .img-topo{
+      z-index: 3;
+      width: 61rem;
+      height: 44rem;
+    }
+    .img-phone{
+      width: 28rem;
+      height: 26rem;
+      z-index: 900;
+      position: absolute;
+      top: 10rem;
+      left: 50rem;
+      animation-name: floating;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      margin-top: 5px
+    }
+    .info{
+      display: inline-block;
+      position: absolute;
+      top: 16rem;
+      left: 12rem;
+      z-index: 900;
+      h1{
+        color: #333333;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 50px;
+        margin-bottom: 40px;
+      }
+      .typed-out{
+        color: #666666;
+        font-size: 30px;
+        font-weight: 500;
+        overflow: hidden;
+        letter-spacing: .15em;        
+        border-right: .15em solid #7F35B2;
+        animation: typing 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+        white-space: nowrap;
+        width: 0;
+      }
+      button{
+        margin-top: 2rem;
+        width: 235px;
+        height: 53px;
+        background-color: #2fd1fb;
+        box-shadow: 0px 0px 12px rgb(207 207 207 / 40%);
+        border-radius: 6px;
+        border: none;
+        font-size: 26px;
+        color: #fff;
+      }
+    }
+  }
+  .about-me{
+    height: 315px;
+    padding: 5rem;
+    margin-top: 5rem;
+    h2{
+      font-size: 45px;
+      font-weight: 600;
+      text-align: center;
+      span{
+        color: #2fd1fb;
+      }
+    }
+    p{
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-size: 22px;
+      text-align: center;
+      width: 50%;
+      margin-left: 25%;
+    }
+    img{
+      position: absolute;
+      top: 50rem;
+      left: 11rem;
+      animation-name: floating;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      margin-top: 5px;
+    }
+  }
+  .projects{
+    padding: 5rem;
+    margin-left: 43px;
+    .item{
+      .itens{
+        height: 343px;
+        margin-right: 98px;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow:10px 13px 17px 12px #CFCFCF66;
+        h2{
+          font-size: 24px;
+          font-weight: 600;
+        }
+        p{
+          font-size: 18px;
+        }
+        button{
+          margin-top: 10rem;
+          width: 195px;
+          height: 36px;
+          background-color: #2fd1fb;
+          box-shadow: 0px 0px 12px #CFCFCF66;
+          border-radius: 6px;   
+          font-size: 16px;
+          border: none;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  .conhecimento{
+    margin-top: 8rem;
+    padding: 20px;
+    width: 100%;
+    height: 570px;
+    h2{
+      color: #2fd1fb;
+      margin-left: 3rem;
+      font-size: 45px;
+      font-weight: 600;
+    }
+    h3{
+      color: #999999;
+      margin-left: 3rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-size: 18px;
+      width: 50%;
+
+    }
+    img{
+      position: absolute;
+      left: 50%;
+      top: 271%;
+    }
+    .img-right{
+      width: 673px;
+    }
+    .itens{
+      margin-top: 2rem;
+      display: flex;
+      padding: 20px;
+      .item{
+        height: 67px;
+        width: 252px;
+        box-shadow: 0px 5px 4px  rgb(207 207 207 / 40%);
+        background-color: #abeafa;
+        margin-right: 60px;
+        border-radius: 98px;
+        h4{
+          font-size: 22px;
+          font-weight: bold;
+          /* margin-left: 31px; */
+          margin-top: 20px;
+          color: #666666;
+          text-align: center;
+        }
+      }
+      .item:hover{
+        background-color: #999999;
+        h4{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .contato{
+    //background-image: url('../../../assets/images/footer-bg.png');
+    margin-top: 15rem;
+    position: relative;
+    display: flex;
+    img{
+      width: 84rem;
+      position: absolute;
+    }
+    h2{
+      font-size: 40px;
+      font-weight: bold;
+      color: #fff;
+      position: absolute;
+      left: 16rem;
+      top: 20rem;
+    }
+    .info-contact{
+      font-size: 32px;
+      position: absolute;
+      left: 25rem;
+      top: 30rem;
+      display: flex;
+      .social-media{
+        h3{
+          margin-right: 10rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
