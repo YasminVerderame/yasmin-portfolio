@@ -60,10 +60,10 @@
                 <button (click)="openModalProject1()" >Ver mais</button>
             </div>
             <div class="col-sm-3  itens">
-                <h2>Jornada de aquisição</h2>
+                <h2>Jornada de Aquisição</h2>
                 <p>Processo de compra</p>
                 <img src="../../../assets/images/criar-conta.png" alt="">
-                <button>Ver mais</button>
+                <button (click)="openModalProject2()">Ver mais</button>
             </div>
             <div class="col-sm-3  itens">
                 <!-- imagem -->
@@ -130,3 +130,4 @@
 </div>
 
 <app-modal-project1 *ngIf="modalProject1" (closeModalEmit)="closeModal()"></app-modal-project1>
+<app-modal-project2 *ngIf="modalProject2" (closeModalEmit)="closeModal()"></app-modal-project2>
