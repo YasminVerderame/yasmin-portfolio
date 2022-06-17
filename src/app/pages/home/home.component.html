@@ -1,3 +1,4 @@
+
 <header>
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container">
@@ -15,7 +16,6 @@
                         PROJECTS
                       </a>
                   </li>
-                
                   <li class="nav-item">
                       <a class="nav-link" href="/profile">
                         CONHECIMENTOS
@@ -53,26 +53,24 @@
 
     <section class="projects">
         <div class="row item">
-              <div class="col-sm-3 itens">
-                  <!-- imagem -->
-                  <h2>Projeto 1</h2>
-                  <p>Descrição do projeto</p>
-                  <button>Ver mais</button>
-              </div>
-  
-              <div class="col-sm-3  itens">
-                  <!-- imagem -->
-                  <h2>Projeto 2</h2>
-                  <p>Descrição do projeto</p>
-                  <button>Ver mais</button>
-              </div>
-  
-              <div class="col-sm-3  itens">
-                  <!-- imagem -->
-                  <h2>Projeto 3</h2>
-                  <p>Descrição do projeto</p>
-                  <button>Ver mais</button>
-              </div>
+            <div class="col-sm-3 itens">
+                <!-- imagem -->
+                <h2>Projeto 1</h2>
+                <p>Descrição do projeto</p>
+                <button (click)="openModalProject1()" >Ver mais</button>
+            </div>
+            <div class="col-sm-3  itens">
+                <!-- imagem -->
+                <h2>Projeto 2</h2>
+                <p>Descrição do projeto</p>
+                <button>Ver mais</button>
+            </div>
+            <div class="col-sm-3  itens">
+                <!-- imagem -->
+                <h2>Projeto 3</h2>
+                <p>Descrição do projeto</p>
+                <button>Ver mais</button>
+            </div>
         </div>
     </section>
 
@@ -81,37 +79,34 @@
         <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum sed rem distinctio ipsa tenetur eveniet?</h3>
   
         <div class="itens">
-              <div class="item">
-                  <h4>HTML5</h4>
-              </div>
-  
-              <div class="item">
-                  <h4>CSS3</h4>
-              </div>
+            <div class="item">
+                <h4>HTML5</h4>
+            </div>
+            <div class="item">
+                <h4>CSS3</h4>
+            </div>
         </div>
         
         <div class="itens">
-              <div class="item">
-                  <h4>ANGULAR</h4>
-              </div>
-  
-              <div class="item">
-                  <h4>BOOTSTRAP</h4>
-              </div>
+            <div class="item">
+                <h4>ANGULAR</h4>
+            </div>
+            <div class="item">
+                <h4>BOOTSTRAP</h4>
+            </div>
         </div>
   
         <div class="itens">
-              <div class="item">
-                  <h4>TYPESCRIPT</h4>
-              </div>
-  
-              <div class="item">
-                  <h4>NODE.JS</h4>
-              </div>
+            <div class="item">
+                <h4>TYPESCRIPT</h4>
+            </div>
+            <div class="item">
+                <h4>NODE.JS</h4>
+            </div>
         </div>
   
-          <img class="img-right" src="../../../assets/images/regular-table-top.png" alt="">
-          <img src="../../../assets/images/about-right-dec.png" alt="">
+        <img class="img-right" src="../../../assets/images/regular-table-top.png" alt="">
+        <img src="../../../assets/images/about-right-dec.png" alt="">
     </section>
 
     <section class="contato">
@@ -119,18 +114,18 @@
         
         <h2>Me siga nas redes socias e acompanhe meu trabalho!</h2>
         <div class="info-contact">
-              <div class="social-media">
-                  <img class="linkedin" src="../../../assets/images/linkedin.png" alt="">
-              </div>
-  
-              <div class="social-media">
-                  <img class="email" src="../../../assets/images/email.png" alt="">
-              </div>
-  
-              <div class="social-media">
-                  <img class="github" src="../../../assets/images/github.png" alt="">
-              </div>
+            <div class="social-media">
+                <img class="linkedin" src="../../../assets/images/linkedin.png" alt="">
+            </div>
+            <div class="social-media">
+                <img class="email" src="../../../assets/images/email.png" alt="">
+            </div>
+            <div class="social-media">
+                <img class="github" src="../../../assets/images/github.png" alt="">
+            </div>
         </div>
         <h4>@2022 Yasmin Verderame</h4>
     </section>
 </div>
+
+<app-modal-project1 *ngIf="modalProject1" (closeModalEmit)="closeModal()"></app-modal-project1>
