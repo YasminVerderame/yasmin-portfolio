@@ -47,6 +47,9 @@ header{
     }
     
   }
+  .sticky-top{
+    display: unset;
+  }
 }
 
 .main-page{
@@ -107,6 +110,7 @@ header{
       }
     }
   }
+
   .about-me{
     height: 315px;
     padding: 5rem;
@@ -145,6 +149,7 @@ header{
       margin-top: 5px;
     }
   }
+
   .projects{
     padding: 5rem;
     margin-left: 43px;
@@ -309,3 +314,63 @@ header{
   }
 }
   
+
+@media (max-width: 1199px){
+  header{
+    .sticky-top{
+      display: none;
+    }
+  }
+  .main-page{
+    width: 100%;
+    .topo{
+      .info{
+        width: 50%;
+        top: 18rem;
+        left: 7rem;
+        h1{
+          font-size: 55px;
+          margin-bottom: 25px;
+        }
+        .typed-out{
+          font-size: 40px;
+        }
+        button{
+          margin-top: 22px;
+          font-size: 29px;
+          width: 181px;
+          height: 57px;
+        }
+      }
+      .img-topo{
+        width: 56rem;
+        height: 32rem;
+      }
+      .img-phone{
+        width: 25rem;
+        height: 20rem;
+        position: absolute;
+        top: 12rem;
+        left: 50rem;
+      }
+    }
+    .projects{
+      padding: 0;
+      margin-top: 11rem;
+      .item{
+        margin-left: 1rem;
+        margin-bottom: 8rem;
+        .itens{
+          margin-right: 50px;
+        }
+      }
+    }
+    .conhecimento{
+      img{
+        position: absolute;
+        left: 56%;
+        top: 159%;
+      }
+    }
+  }
+}
