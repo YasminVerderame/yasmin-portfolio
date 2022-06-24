@@ -12,8 +12,8 @@
   to{border-right-color: transparent;}
 }
 
-
 header{
+  font-family: 'Maison Neue';
   z-index: 90000;
   //position: fixed;
   width: 100%;
@@ -38,6 +38,12 @@ header{
     }
     .navbar-nav{
       margin-left: auto;
+    }
+    h1{
+      font-family: "Maison Neue";
+      font-weight: 600;
+      font-size: 25px;
+      color: #2fd1fb;
     }
     
   }
@@ -109,17 +115,24 @@ header{
       font-size: 45px;
       font-weight: 600;
       text-align: center;
+      color: #333333;
       span{
         color: #2fd1fb;
       }
     }
     p{
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       margin-top: 3rem;
       margin-bottom: 1rem;
       font-size: 22px;
       text-align: center;
       width: 50%;
       margin-left: 25%;
+      color: #333333;
+      letter-spacing: 1px;
+      span{
+        font-weight: 600;
+      }
     }
     img{
       position: absolute;
@@ -143,36 +156,48 @@ header{
         padding: 2rem;
         box-shadow:10px 13px 17px 12px #CFCFCF66;
         h2{
-          font-size: 24px;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+          font-size: 23px;
           font-weight: 600;
-        }
-        p{
-          font-size: 18px;
+          margin-bottom: 35px;
+          color: #333333;
         }
         button{
-          margin-top: 1rem;
+          margin-top: 3rem;
           width: 195px;
           height: 36px;
           background-color: #2fd1fb;
           box-shadow: 0px 0px 12px #CFCFCF66;
           border-radius: 6px;   
           font-size: 16px;
-          border: none;
+          border: 0;
           margin-left: 1rem;
+          cursor: pointer;
+          color: #333333;
         }
+        button:disabled{
+          background-color: #999999;
+          opacity: 0.5;
+          color: #fff;
+          cursor: unset;
+        }
+
         img{
           width: 100%;
         }
+        .loading{
+          width: 60%;
+          margin-left: 17%;
+          margin-top: 19%;
+        }
       }
       .itens:hover{
-        animation-name: floating;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        img{
-          width: 15rem;
-        }
-        
+        background-color: #88dff5;
+        button{
+          background-color: #fff;
+          opacity: 1;
+          color: #333333;
+        }        
       }
     }
   }
@@ -186,14 +211,6 @@ header{
       margin-left: 3rem;
       font-size: 45px;
       font-weight: 600;
-    }
-    h3{
-      color: #999999;
-      margin-left: 3rem;
-      margin-top: 3rem;
-      margin-bottom: 1rem;
-      font-size: 18px;
-      width: 50%;
     }
     img{
       position: absolute;

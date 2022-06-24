@@ -2,29 +2,21 @@
 <header>
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container">
-          <a class="navbar" href="#topo"></a>
+          <h1> <img src="../../../assets/images/dev.svg" alt=""> Yasmin Verderame</h1>
 
           <div class="navbar-collapse">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                      <a class="nav-link" href="">
-                        ABOUT ME
-                    </a>
+                      <a class="nav-link" href="#about-me">ABOUT ME</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="">
-                        PROJECTS
-                      </a>
+                      <a class="nav-link" href="#projects"> PROJECTS</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="/profile">
-                        CONHECIMENTOS
-                      </a>
+                      <a class="nav-link" href="#conhecimento">CONHECIMENTOS</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="/home">
-                        CONTATO
-                      </a>
+                      <a class="nav-link" href="#contato">CONTATO</a>
                   </li> 
               </ul>
           </div>
@@ -33,51 +25,45 @@
 </header>
 
 <div class="main-page">
-
     <section class="topo">
         <img class="img-topo" src="../../../assets/images/slider-left-dec.png" alt="">
         <img class="img-phone" src="../../../assets/images/slider-dec.png" alt="">
         <div class="info">
           <h1>Yasmin Verderame</h1>
           <h2 class="typed-out">Front-end Developer</h2>
-          <button>Saiba mais</button>
+          <a href="https://www.linkedin.com/in/yasmin-verderame/" target="_blank"><button>LinkedIn</button></a>
         </div>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <img src="../../../assets/images/services-right-dec.png" alt="">
-        <!-- imagem -->
         <h2>Me <span>conheça</span> um pouco <span>mais</span></h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dignissimos eum similique facere necessitatibus, velit iste laboriosam. Nemo, possimus explicabo.</p>
+        <p>Me chamo <span>Yasmin</span> e sou desenvolvedora <span>Front-end.</span> Desenvolvo <span>landing pages</span> e interfaces para pequenas e grandes empresas, com o objetivo de melhorar a <span>experiência do usuário.</span></p>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="row item">
             <div class="col-sm-3 itens">
-                <h2>Mutant Whats</h2>
-                <p>Landing Page</p>
+                <h2>Mutant Whats</h2>               
                 <img src="../../../assets/images/mutant.png" alt="">
                 <button (click)="openModalProject1()" >Ver mais</button>
             </div>
             <div class="col-sm-3  itens">
                 <h2>Jornada de Aquisição</h2>
-                <p>Processo de compra</p>
-                <img src="../../../assets/images/criar-conta.png" alt="">
+                <img style="height: 180px;" src="../../../assets/images/criar-conta.png" alt="">
                 <button (click)="openModalProject2()">Ver mais</button>
             </div>
-            <div class="col-sm-3  itens">
-                <!-- imagem -->
-                <h2>Projeto 3</h2>
-                <p>Descrição do projeto</p>
-                <img src="../../../assets/images/conectar-whats.png" alt="">
-                <button>Ver mais</button>
+            <div class="col-sm-3  itens" disabled>
+                <h2>Em Breve!</h2>
+                <img class="loading" src="../../../assets/images/loading.svg" alt="">
+                <button disabled >Em desenvolvimento</button>
             </div>
         </div>
     </section>
 
-    <section class="conhecimento">
+    <section class="conhecimento" id="conhecimento">
         <h2>Linguagens e ferramentas</h2>
-        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum sed rem distinctio ipsa tenetur eveniet?</h3>
+
   
         <div class="itens">
             <div class="item">
@@ -105,24 +91,33 @@
                 <h4>NODE.JS</h4>
             </div>
         </div>
+
+        <div class="itens">
+            <div class="item">
+                <h4>FIGMA</h4>
+            </div>
+            <div class="item">
+                <h4>ADOBE XD</h4>
+            </div>
+        </div>
   
         <img class="img-right" src="../../../assets/images/regular-table-top.png" alt="">
         <img src="../../../assets/images/about-right-dec.png" alt="">
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
         <img src="../../../assets/images/footer-bg.png" alt="">
         
         <h2>Me siga nas redes socias e acompanhe meu trabalho!</h2>
         <div class="info-contact">
             <div class="social-media">
-                <img class="linkedin" src="../../../assets/images/linkedin.png" alt="">
+                <a href="https://www.linkedin.com/in/yasmin-verderame/" target="_blank"><img class="linkedin" src="../../../assets/images/linkedin.png" alt="" ></a>
             </div>
             <div class="social-media">
-                <img class="email" src="../../../assets/images/email.png" alt="">
+                <a href="https://api.whatsapp.com/send/?phone=5547992853008&text&app_absent=0" target="_blank"> <img class="email" src="../../../assets/images/whatsapp.png" alt=""></a>
             </div>
             <div class="social-media">
-                <img class="github" src="../../../assets/images/github.png" alt="">
+                <a href="https://github.com/YasminVerderame" target="_blank"><img class="github" src="../../../assets/images/github.png" alt=""></a>
             </div>
         </div>
         <h4>@2022 Yasmin Verderame</h4>
@@ -131,3 +126,4 @@
 
 <app-modal-project1 *ngIf="modalProject1" (closeModalEmit)="closeModal()"></app-modal-project1>
 <app-modal-project2 *ngIf="modalProject2" (closeModalEmit)="closeModal()"></app-modal-project2>
+<!-- <app-modal-project3 *ngIf="modalProject3" (closeModalEmit)="closeModal()"></app-modal-project3> -->

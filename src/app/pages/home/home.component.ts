@@ -9,6 +9,7 @@ export class HomeComponent implements OnInit {
 
   public modalProject1: boolean = false;
   public modalProject2: boolean = false;
+  public modalProject3: boolean = false;
 
   @Output() closeModalEmit = new EventEmitter();
 
@@ -19,6 +20,7 @@ export class HomeComponent implements OnInit {
   closeModal(){
     this.modalProject1 = false;
     this.modalProject2 = false;
+    this.modalProject3 = false;
   }
 
   openModalProject1(){
@@ -26,6 +28,10 @@ export class HomeComponent implements OnInit {
   }
 
   openModalProject2(){
+    this.modalProject2 = true;
+  }
+
+  openModalProject3(){
     this.modalProject2 = true;
   }
 

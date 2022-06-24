@@ -8,6 +8,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './pages/home/home.component';
 import { ModalProject1Component } from './components/modal-project1/modal-project1.component';
 import { ModalProject2Component } from './components/modal-project2/modal-project2.component';
+import { ModalProject3Component } from './components/modal-project3/modal-project3.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ModalProject2Component } from './components/modal-project2/modal-projec
     HomeComponent,
     ModalProject1Component,
     ModalProject2Component,
+    ModalProject3Component,
 
     
   ],
