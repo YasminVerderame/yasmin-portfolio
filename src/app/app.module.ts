@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ModalProject1Component } from './components/modal-project1/modal-project1.component';
 import { ModalProject2Component } from './components/modal-project2/modal-project2.component';
 import { ModalProject3Component } from './components/modal-project3/modal-project3.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +18,8 @@ import { ModalProject3Component } from './components/modal-project3/modal-projec
     ModalProject1Component,
     ModalProject2Component,
     ModalProject3Component,
+    HeaderComponent,
 
-    
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
   public modalProject2: boolean = false;
   public modalProject3: boolean = false;
 
+  public collapsed: boolean = false;
+
   @Output() closeModalEmit = new EventEmitter();
 
   constructor(
@@ -32,7 +34,7 @@ export class HomeComponent implements OnInit {
   }
 
   openModalProject3(){
-    this.modalProject2 = true;
+    this.modalProject3 = true;
   }
 
   ngOnInit(): void {

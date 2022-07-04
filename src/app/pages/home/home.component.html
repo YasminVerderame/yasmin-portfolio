@@ -1,34 +1,8 @@
-
-<header>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container">
-          <h1> <img src="../../../assets/images/dev.svg" alt=""> Yasmin Verderame</h1>
-
-          <div class="navbar-collapse">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" href="#about-me">ABOUT ME</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#projects"> PROJECTS</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#conhecimento">CONHECIMENTOS</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#contato">CONTATO</a>
-                  </li> 
-              </ul>
-          </div>
-      </div>
-    </nav>
-</header>
-
+<app-header></app-header>
 <div class="main-page">
     <section class="topo">
-        <img class="img-topo" src="../../../assets/images/slider-left-dec.png" alt="">
-        <img class="img-phone" src="../../../assets/images/slider-dec.png" alt="">
-        <div class="info">
+        <div class="info"> 
+          <img src="../../../assets/images/Website setup-amico.svg" alt="">
           <h1>Yasmin Verderame</h1>
           <h2 class="typed-out">Front-end Developer</h2>
           <a href="https://www.linkedin.com/in/yasmin-verderame/" target="_blank"><button>LinkedIn</button></a>
@@ -36,35 +10,34 @@
     </section>
 
     <section class="about-me" id="about-me">
-        <img src="../../../assets/images/services-right-dec.png" alt="">
+        <img src="../../../assets/images/About me-amico.svg" alt="">
         <h2>Me <span>conheça</span> um pouco <span>mais</span></h2>
         <p>Me chamo <span>Yasmin</span> e sou desenvolvedora <span>Front-end.</span> Desenvolvo <span>landing pages</span> e interfaces para pequenas e grandes empresas, com o objetivo de melhorar a <span>experiência do usuário.</span></p>
     </section>
 
     <section class="projects" id="projects">
-        <div class="row item">
-            <div class="col-sm-3 itens">
+        <div class="item row-column-reverse-mobile">
+            <div class="itens">
                 <h2>Mutant Whats</h2>               
                 <img src="../../../assets/images/mutant.png" alt="">
                 <button (click)="openModalProject1()" >Ver mais</button>
             </div>
-            <div class="col-sm-3  itens">
+            <div class="itens">
                 <h2>Jornada de Aquisição</h2>
-                <img style="height: 180px;" src="../../../assets/images/criar-conta.png" alt="">
+                <img style="height: 180px;" src="../../../assets/images/dev.whats.mutantcxo.com_pre-cadastro (1).png" alt="">
                 <button (click)="openModalProject2()">Ver mais</button>
             </div>
-            <div class="col-sm-3  itens" disabled>
-                <h2>Em Breve!</h2>
-                <img class="loading" src="../../../assets/images/loading.svg" alt="">
-                <button disabled >Em desenvolvimento</button>
+            <div class="itens">
+                <h2>AgroMarket</h2>
+                <img style="height: 180px;" src="../../../assets/images/nervous-pike-9da903.netlify.app_ (2).png" alt="">
+                <button (click)="openModalProject3()">Ver mais</button>
             </div>
         </div>
     </section>
 
     <section class="conhecimento" id="conhecimento">
+        <img src="../../../assets/images/Hand coding-rafiki.svg" alt="">
         <h2>Linguagens e ferramentas</h2>
-
-  
         <div class="itens">
             <div class="item">
                 <h4>HTML5</h4>
@@ -101,13 +74,9 @@
             </div>
         </div>
   
-        <img class="img-right" src="../../../assets/images/regular-table-top.png" alt="">
-        <img src="../../../assets/images/about-right-dec.png" alt="">
     </section>
 
-    <section class="contato" id="contato">
-        <img src="../../../assets/images/footer-bg.png" alt="">
-        
+    <section class="contato" id="contato">       
         <h2>Me siga nas redes socias e acompanhe meu trabalho!</h2>
         <div class="info-contact">
             <div class="social-media">
@@ -126,4 +95,4 @@
 
 <app-modal-project1 *ngIf="modalProject1" (closeModalEmit)="closeModal()"></app-modal-project1>
 <app-modal-project2 *ngIf="modalProject2" (closeModalEmit)="closeModal()"></app-modal-project2>
-<!-- <app-modal-project3 *ngIf="modalProject3" (closeModalEmit)="closeModal()"></app-modal-project3> -->
+<app-modal-project3 *ngIf="modalProject3" (closeModalEmit)="closeModal()"></app-modal-project3>
